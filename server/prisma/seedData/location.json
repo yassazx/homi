@@ -1,92 +1,92 @@
 [
   {
     "id": 1,
-    "country": "United States",
-    "city": "Pasadena",
-    "state": "CA",
-    "address": "123 Colorado Blvd",
-    "postalCode": "91105",
-    "coordinates": "POINT(-118.144516 34.147785)"
+    "country": "Morocco",
+    "city": "Casablanca",
+    "state": "Casablanca-Settat",
+    "address": "123 Boulevard Zerktouni",
+    "postalCode": "20000",
+    "coordinates": "POINT(-7.615856 33.589886)"
   },
   {
     "id": 2,
-    "country": "United States",
-    "city": "Santa Monica",
-    "state": "CA",
-    "address": "456 Ocean Ave",
-    "postalCode": "90401",
-    "coordinates": "POINT(-118.496513 34.013654)"
+    "country": "Morocco",
+    "city": "Agadir",
+    "state": "Souss-Massa",
+    "address": "456 Avenue Hassan II",
+    "postalCode": "80000",
+    "coordinates": "POINT(-9.598107 30.427755)"
   },
   {
     "id": 3,
-    "country": "United States",
-    "city": "Burbank",
-    "state": "CA",
-    "address": "789 Hollywood Way",
-    "postalCode": "91505",
-    "coordinates": "POINT(-118.328661 34.180839)"
+    "country": "Morocco",
+    "city": "Rabat",
+    "state": "Rabat-Salé-Kénitra",
+    "address": "789 Rue Al Nahda, Agdal",
+    "postalCode": "10090",
+    "coordinates": "POINT(-6.841650 34.008880)"
   },
   {
     "id": 4,
-    "country": "United States",
-    "city": "Long Beach",
-    "state": "CA",
-    "address": "101 Pine Ave",
-    "postalCode": "90802",
-    "coordinates": "POINT(-118.192604 33.766720)"
+    "country": "Morocco",
+    "city": "Marrakech",
+    "state": "Marrakech-Safi",
+    "address": "101 Route de Targa",
+    "postalCode": "40000",
+    "coordinates": "POINT(-8.020975 31.625825)"
   },
   {
     "id": 5,
-    "country": "United States",
-    "city": "New York",
-    "state": "NY",
-    "address": "555 Manhattan Ave",
-    "postalCode": "10001",
-    "coordinates": "POINT(-74.005941 40.712784)"
+    "country": "Morocco",
+    "city": "Casablanca",
+    "state": "Casablanca-Settat",
+    "address": "555 Boulevard d’Anfa",
+    "postalCode": "20250",
+    "coordinates": "POINT(-7.633794 33.590150)"
   },
   {
     "id": 6,
-    "country": "United States",
-    "city": "Malibu",
-    "state": "CA",
-    "address": "888 Malibu Road",
-    "postalCode": "90265",
-    "coordinates": "POINT(-118.774518 34.025922)"
+    "country": "Morocco",
+    "city": "Fès",
+    "state": "Fès-Meknès",
+    "address": "888 Rue Talaa Sghira",
+    "postalCode": "30000",
+    "coordinates": "POINT(-4.978126 34.061451)"
   },
   {
     "id": 7,
-    "country": "United States",
-    "city": "Glendale",
-    "state": "CA",
-    "address": "777 Brand Blvd",
-    "postalCode": "91203",
-    "coordinates": "POINT(-118.254708 34.142508)"
+    "country": "Morocco",
+    "city": "Meknès",
+    "state": "Fès-Meknès",
+    "address": "777 Rue Dar Smen",
+    "postalCode": "50000",
+    "coordinates": "POINT(-5.555730 33.894570)"
   },
   {
     "id": 8,
-    "country": "United States",
-    "city": "Torrance",
-    "state": "CA",
-    "address": "555 Torrance Blvd",
-    "postalCode": "90503",
-    "coordinates": "POINT(-118.352575 33.835849)"
+    "country": "Morocco",
+    "city": "Tanger",
+    "state": "Tanger-Tétouan-Al Hoceïma",
+    "address": "555 Avenue Mohammed VI",
+    "postalCode": "90000",
+    "coordinates": "POINT(-5.809178 35.767270)"
   },
   {
     "id": 9,
-    "country": "United States",
-    "city": "Miami",
-    "state": "FL",
-    "address": "1234 Ocean Dr",
-    "postalCode": "33139",
-    "coordinates": "POINT(-80.130045 25.782551)"
+    "country": "Morocco",
+    "city": "Ifrane",
+    "state": "Fès-Meknès",
+    "address": "1234 Route d'Azrou",
+    "postalCode": "53000",
+    "coordinates": "POINT(-5.113139 33.533930)"
   },
   {
     "id": 10,
-    "country": "United States",
-    "city": "Beverly Hills",
-    "state": "CA",
-    "address": "789 Rodeo Dr",
-    "postalCode": "90210",
-    "coordinates": "POINT(-118.400356 34.073620)"
+    "country": "Morocco",
+    "city": "Témara",
+    "state": "Rabat-Salé-Kénitra",
+    "address": "789 Avenue Moulay Abdellah",
+    "postalCode": "12000",
+    "coordinates": "POINT(-6.906201 33.925800)"
   }
 ]

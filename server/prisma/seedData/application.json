@@ -5,10 +5,10 @@
     "status": "Approved",
     "propertyId": 1,
     "tenantCognitoId": "us-east-2:98765432-90ab-cdef-1234-567890abcdef",
-    "name": "Alice Brown",
-    "email": "alice.brown@example.com",
-    "phoneNumber": "+1 (555) 111-2222",
-    "message": "I am interested in this property.",
+    "name": "Salma El Amrani",
+    "email": "salma.elamrani@example.com",
+    "phoneNumber": "+212 661-112233",
+    "message": "Je suis intéressée par cette propriété.",
     "leaseId": 1
   },
   {
@@ -17,10 +17,10 @@
     "status": "Pending",
     "propertyId": 2,
     "tenantCognitoId": "us-east-2:87654321-90ab-cdef-1234-567890abcdef",
-    "name": "Bob Green",
-    "email": "bob.green@example.com",
-    "phoneNumber": "+1 (555) 333-4444",
-    "message": "Looking forward to viewing this apartment."
+    "name": "Youssef Bennis",
+    "email": "youssef.bennis@example.com",
+    "phoneNumber": "+212 661-334455",
+    "message": "J’ai hâte de visiter cet appartement."
   },
   {
     "id": 3,
@@ -28,10 +28,10 @@
     "status": "Denied",
     "propertyId": 3,
     "tenantCognitoId": "817b3540-a061-707b-742a-a28391181149",
-    "name": "Carol White",
-    "email": "carol.white@example.com",
-    "phoneNumber": "+1 (555) 555-6666",
-    "message": "Excited about the possibility of renting this house."
+    "name": "Nada Idrissi",
+    "email": "nada.idrissi@example.com",
+    "phoneNumber": "+212 661-556677",
+    "message": "J’espère pouvoir louer cette maison."
   },
   {
     "id": 4,
@@ -39,10 +39,10 @@
     "status": "Approved",
     "propertyId": 4,
     "tenantCognitoId": "us-east-2:65432109-90ab-cdef-1234-567890abcdef",
-    "name": "David Lee",
-    "email": "david.lee@example.com",
-    "phoneNumber": "+1 (555) 777-8888",
-    "message": "This property looks perfect for my needs.",
+    "name": "Hamza Talbi",
+    "email": "hamza.talbi@example.com",
+    "phoneNumber": "+212 661-778899",
+    "message": "Cette propriété répond à tous mes besoins.",
     "leaseId": 4
   },
   {
@@ -51,10 +51,10 @@
     "status": "Pending",
     "propertyId": 5,
     "tenantCognitoId": "us-east-2:54321098-90ab-cdef-1234-567890abcdef",
-    "name": "Emma Taylor",
-    "email": "emma.taylor@example.com",
-    "phoneNumber": "+1 (555) 999-0000",
-    "message": "I'm very interested in this apartment."
+    "name": "Fatima Zahra Kabbaj",
+    "email": "fatimazahra.kabbaj@example.com",
+    "phoneNumber": "+212 661-990000",
+    "message": "Je suis très intéressée par cet appartement."
   },
   {
     "id": 6,
@@ -62,10 +62,10 @@
     "status": "Approved",
     "propertyId": 6,
     "tenantCognitoId": "us-east-2:43210987-90ab-cdef-1234-567890abcdef",
-    "name": "Frank Wilson",
-    "email": "frank.wilson@example.com",
-    "phoneNumber": "+1 (555) 222-3333",
-    "message": "This property seems to fit all my requirements.",
+    "name": "Omar Raji",
+    "email": "omar.raji@example.com",
+    "phoneNumber": "+212 661-223344",
+    "message": "Ce logement correspond parfaitement à mes critères.",
     "leaseId": 6
   },
   {
@@ -74,10 +74,10 @@
     "status": "Pending",
     "propertyId": 3,
     "tenantCognitoId": "us-east-2:32109876-90ab-cdef-1234-567890abcdef",
-    "name": "Grace Miller",
-    "email": "grace.miller@example.com",
-    "phoneNumber": "+1 (555) 444-5555",
-    "message": "I'm interested in this loft and would like to schedule a viewing."
+    "name": "Imane Bahja",
+    "email": "imane.bahja@example.com",
+    "phoneNumber": "+212 661-445566",
+    "message": "Je suis intéressée par ce loft et je souhaite une visite."
   },
   {
     "id": 8,
@@ -85,10 +85,10 @@
     "status": "Approved",
     "propertyId": 5,
     "tenantCognitoId": "us-east-2:21098765-90ab-cdef-1234-567890abcdef",
-    "name": "Henry Wilson",
-    "email": "henry.wilson@example.com",
-    "phoneNumber": "+1 (555) 444-5555",
-    "message": "I'm very interested in this luxury penthouse.",
+    "name": "Reda Lamrani",
+    "email": "reda.lamrani@example.com",
+    "phoneNumber": "+212 661-445566",
+    "message": "Je suis très intéressé par ce penthouse de luxe.",
     "leaseId": 8
   },
   {
@@ -97,10 +97,10 @@
     "status": "Pending",
     "propertyId": 7,
     "tenantCognitoId": "us-east-2:10987654-90ab-cdef-1234-567890abcdef",
-    "name": "Isabella Garcia",
-    "email": "isabella.garcia@example.com",
-    "phoneNumber": "+1 (555) 666-7777",
-    "message": "The historic brownstone looks perfect for my family."
+    "name": "Aya Ghallab",
+    "email": "aya.ghallab@example.com",
+    "phoneNumber": "+212 661-667788",
+    "message": "Ce logement historique est parfait pour ma famille."
   },
   {
     "id": 10,
@@ -108,10 +108,10 @@
     "status": "Denied",
     "propertyId": 2,
     "tenantCognitoId": "us-east-2:09876543-90ab-cdef-1234-567890abcdef",
-    "name": "Jack Thompson",
-    "email": "jack.thompson@example.com",
-    "phoneNumber": "+1 (555) 888-9999",
-    "message": "I'd love to rent this beach house for the summer."
+    "name": "Zakaria Ait Taleb",
+    "email": "zakaria.aittaleb@example.com",
+    "phoneNumber": "+212 661-889900",
+    "message": "J’aimerais louer cette maison de plage pour l’été."
   },
   {
     "id": 11,
@@ -119,10 +119,10 @@
     "status": "Pending",
     "propertyId": 8,
     "tenantCognitoId": "us-east-2:a9876543-90ab-cdef-1234-567890abcdef",
-    "name": "Karen Martinez",
-    "email": "karen.martinez@example.com",
-    "phoneNumber": "+1 (555) 123-4567",
-    "message": "I'm interested in this micro-apartment for its central location."
+    "name": "Zineb Joundy",
+    "email": "zineb.joundy@example.com",
+    "phoneNumber": "+212 661-123456",
+    "message": "Je suis intéressée par ce micro-appartement bien situé."
   },
   {
     "id": 12,
@@ -130,10 +130,10 @@
     "status": "Approved",
     "propertyId": 9,
     "tenantCognitoId": "us-east-2:b9876543-90ab-cdef-1234-567890abcdef",
-    "name": "Liam Johnson",
-    "email": "liam.johnson@example.com",
-    "phoneNumber": "+1 (555) 987-6543",
-    "message": "The mountain view cabin looks perfect for a weekend getaway.",
+    "name": "Taha Mouline",
+    "email": "taha.mouline@example.com",
+    "phoneNumber": "+212 661-987654",
+    "message": "Ce chalet avec vue sur montagne est parfait pour une escapade.",
     "leaseId": 12
   },
   {
@@ -142,10 +142,10 @@
     "status": "Pending",
     "propertyId": 10,
     "tenantCognitoId": "us-east-2:c9876543-90ab-cdef-1234-567890abcdef",
-    "name": "Mia Rodriguez",
-    "email": "mia.rodriguez@example.com",
-    "phoneNumber": "+1 (555) 246-8135",
-    "message": "I'm curious about the eco-friendly features of this tiny house."
+    "name": "Rania Khadiri",
+    "email": "rania.khadiri@example.com",
+    "phoneNumber": "+212 661-246813",
+    "message": "Je suis curieuse des caractéristiques écologiques de cette tiny house."
   },
   {
     "id": 14,
@@ -153,10 +153,10 @@
     "status": "Approved",
     "propertyId": 1,
     "tenantCognitoId": "us-east-2:d9876543-90ab-cdef-1234-567890abcdef",
-    "name": "Noah Kim",
-    "email": "noah.kim@example.com",
-    "phoneNumber": "+1 (555) 369-2580",
-    "message": "The downtown apartment seems ideal for my work location.",
+    "name": "Yassin Bouras",
+    "email": "yassin.bouras@example.com",
+    "phoneNumber": "+212 661-369258",
+    "message": "Cet appartement au centre-ville semble parfait pour mon travail.",
     "leaseId": 14
   },
   {
@@ -165,9 +165,9 @@
     "status": "Pending",
     "propertyId": 4,
     "tenantCognitoId": "us-east-2:e9876543-90ab-cdef-1234-567890abcdef",
-    "name": "Olivia Chen",
-    "email": "olivia.chen@example.com",
-    "phoneNumber": "+1 (555) 159-7531",
-    "message": "I'm looking for a spacious family home like this one."
+    "name": "Hind Lahrichi",
+    "email": "hind.lahrichi@example.com",
+    "phoneNumber": "+212 661-159753",
+    "message": "Je cherche une grande maison familiale comme celle-ci."
   }
 ]

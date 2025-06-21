@@ -144,7 +144,7 @@
     "amountPaid": 0.0,
     "dueDate": "2023-10-01T00:00:00Z",
     "paymentDate": "2023-09-28T00:00:00Z",
-    "paymentStatus": "Paid",
+    "paymentStatus": "Pending",
     "lease": {
       "connect": { "id": 15 }
     }
