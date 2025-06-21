@@ -79,7 +79,7 @@ model Property {
   isParkingIncluded Boolean      @default(false)
   beds              Int
   baths             Float
-  squareFeet        Int
+  squaremeter        Int
   propertyType      PropertyType
   postedDate        DateTime     @default(now())
   averageRating     Float?       @default(0)

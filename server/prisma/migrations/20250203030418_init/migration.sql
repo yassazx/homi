@@ -31,7 +31,7 @@ CREATE TABLE "Property" (
     "isParkingIncluded" BOOLEAN NOT NULL DEFAULT false,
     "beds" INTEGER NOT NULL,
     "baths" DOUBLE PRECISION NOT NULL,
-    "squareFeet" INTEGER NOT NULL,
+    "squaremeter" INTEGER NOT NULL,
     "propertyType" "PropertyType" NOT NULL,
     "postedDate" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "averageRating" DOUBLE PRECISION DEFAULT 0,
