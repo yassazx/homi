@@ -22,10 +22,11 @@ const Map = () => {
 
     const map = new mapboxgl.Map({
       container: mapContainerRef.current!,
-      style: "style: 'mapbox://styles/mapbox/streets-v11'",
-      center: filters.coordinates || [-74.5, 40],
+      style: `https://api.mapbox.com/styles/v1/mapbox/streets-v11?access_token=${process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}`,
+      center: filters.coordinates || [-7.5898, 33.5731],
       zoom: 9,
     });
+    
 
     properties.forEach((property) => {
       const marker = createPropertyMarker(property, map);
@@ -73,7 +74,7 @@ const createPropertyMarker = (property: Property, map: mapboxgl.Map) => {
           <div>
             <a href="/search/${property.id}" target="_blank" class="marker-popup-title">${property.name}</a>
             <p class="marker-popup-price">
-              $${property.pricePerMonth}
+              MAD${property.pricePerMonth}
               <span class="marker-popup-price-unit"> / month</span>
             </p>
           </div>

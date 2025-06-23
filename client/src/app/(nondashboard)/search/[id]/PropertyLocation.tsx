@@ -19,13 +19,14 @@ const PropertyLocation = ({ propertyId }: PropertyDetailsProps) => {
 
     const map = new mapboxgl.Map({
       container: mapContainerRef.current!,
-      style: "style: 'mapbox://styles/mapbox/streets-v11'",
+      style: `https://api.mapbox.com/styles/v1/mapbox/streets-v11?access_token=${process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}`,
       center: [
         property.location.coordinates.longitude,
         property.location.coordinates.latitude,
       ],
       zoom: 14,
     });
+    
 
     const marker = new mapboxgl.Marker()
       .setLngLat([
