@@ -160,8 +160,8 @@ const FiltersFull = () => {
             }
           />
           <div className="flex justify-between mt-2">
-            <span>${localFilters.priceRange[0] ?? 0}</span>
-            <span>${localFilters.priceRange[1] ?? 10000}</span>
+            <span>MAD{localFilters.priceRange[0] ?? 0}</span>
+            <span>MAD{localFilters.priceRange[1] ?? 10000}</span>
           </div>
         </div>
 
@@ -210,7 +210,7 @@ const FiltersFull = () => {
 
         {/* Square Feet */}
         <div>
-          <h4 className="font-bold mb-2">Square Feet</h4>
+          <h4 className="font-bold mb-2">Square Meter</h4>
           <Slider
             min={0}
             max={5000}
@@ -228,8 +228,8 @@ const FiltersFull = () => {
             className="[&>.bar]:bg-primary-700"
           />
           <div className="flex justify-between mt-2">
-            <span>{localFilters.squareFeet[0] ?? 0} sq ft</span>
-            <span>{localFilters.squareFeet[1] ?? 5000} sq ft</span>
+            <span>{localFilters.squareFeet[0] ?? 0} m2</span>
+            <span>{localFilters.squareFeet[1] ?? 5000} m2</span>
           </div>
         </div>
 

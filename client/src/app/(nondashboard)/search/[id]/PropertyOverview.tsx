@@ -84,10 +84,7 @@ const PropertyOverview = ({ propertyId }: PropertyOverviewProps) => {
           dryer. Find your personal escape at home beside stunning swimming
           pools and spas with poolside cabanas. Experience your very own oasis
           surrounded by lavish landscaped courtyards, with indoor/outdoor
-          entertainment seating. By day, lounge in the BBQ area and experience
-          the breath taking unobstructed views stretching from the Palos Verdes
-          Peninsula to Downtown Los Angeles, or watch the beauty of the South
-          Bay skyline light up by night. Start or end your day with a workout in
+          entertainment seating. B Start or end your day with a workout in
           our full-size state of the art fitness club and yoga studio. Save the
           commute and plan your next meeting in the business centers conference
           room, adjacent to our internet and coffee lounge. Conveniently located
