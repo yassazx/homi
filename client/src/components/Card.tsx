@@ -96,7 +96,7 @@ const Card = ({
           </span>
           <span className="flex items-center">
             <House className="w-5 h-5 mr-2" />
-            {property.squareFeet} sq ft
+            {property.squaremeter} m2
           </span>
         </div>
       </div>

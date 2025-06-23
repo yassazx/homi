@@ -24,8 +24,8 @@ export const getProperties = async (
       beds,
       baths,
       propertyType,
-      squareFeetMin,
-      squareFeetMax,
+      squaremeterMin,
+      squaremeterMax,
       amenities,
       availableFrom,
       latitude,
@@ -61,15 +61,15 @@ export const getProperties = async (
       whereConditions.push(Prisma.sql`p.baths >= ${Number(baths)}`);
     }
 
-    if (squareFeetMin) {
+    if (squaremeterMin) {
       whereConditions.push(
-        Prisma.sql`p."squareFeet" >= ${Number(squareFeetMin)}`
+        Prisma.sql`p."squaremeter" >= ${Number(squaremeterMin)}`
       );
     }
 
-    if (squareFeetMax) {
+    if (squaremeterMax) {
       whereConditions.push(
-        Prisma.sql`p."squareFeet" <= ${Number(squareFeetMax)}`
+        Prisma.sql`p."squaremeter" <= ${Number(squaremeterMax)}`
       );
     }
 
@@ -276,7 +276,7 @@ export const createProperty = async (
         applicationFee: parseFloat(propertyData.applicationFee),
         beds: parseInt(propertyData.beds),
         baths: parseFloat(propertyData.baths),
-        squareFeet: parseInt(propertyData.squareFeet),
+        squaremeter: parseInt(propertyData.squaremeter),
       },
       include: {
         location: true,
