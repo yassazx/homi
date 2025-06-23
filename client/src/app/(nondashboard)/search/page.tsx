@@ -62,7 +62,9 @@ const SearchPage = () => {
         </div>
       </div>
     </div>
+    
   );
 };
+
 
 export default SearchPage;
