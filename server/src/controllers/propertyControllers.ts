@@ -206,6 +206,15 @@ export const createProperty = async (
       ...propertyData
     } = req.body;
 
+        // Parse amenities/highlights from JSON strings
+        const parsedAmenities = propertyData.amenities 
+        ? JSON.parse(propertyData.amenities) 
+        : [];
+        
+      const parsedHighlights = propertyData.highlights 
+        ? JSON.parse(propertyData.highlights) 
+        : [];
+
     const photoUrls = await Promise.all(
       files.map(async (file) => {
         const uploadParams = {
@@ -283,6 +292,14 @@ export const createProperty = async (
         manager: true,
       },
     });
+    
+    // Add to createProperty controller
+console.log("Received property data:", {
+  ...propertyData,
+  amenities: parsedAmenities,
+  highlights: parsedHighlights,
+  photoCount: files.length
+});
 
     res.status(201).json(newProperty);
   } catch (err: any) {

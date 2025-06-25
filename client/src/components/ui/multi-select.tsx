@@ -29,6 +29,7 @@ interface MultiSelectProps {
 const MultiSelect = React.forwardRef<HTMLButtonElement, MultiSelectProps>(
   ({ options, value = [], onChange, placeholder = "Select...", className }, ref) => {
     const [open, setOpen] = React.useState(false)
+    const containerRef = React.useRef<HTMLDivElement>(null)
 
     const toggleDropdown = () => setOpen((prev) => !prev)
     const closeDropdown = () => setOpen(false)
@@ -40,8 +41,25 @@ const MultiSelect = React.forwardRef<HTMLButtonElement, MultiSelectProps>(
       onChange?.(newValue)
     }
 
+    // 🔒 Close dropdown when clicking outside
+    React.useEffect(() => {
+      const handleClickOutside = (event: MouseEvent) => {
+        if (
+          containerRef.current &&
+          !containerRef.current.contains(event.target as Node)
+        ) {
+          closeDropdown()
+        }
+      }
+
+      document.addEventListener("mousedown", handleClickOutside)
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside)
+      }
+    }, [])
+
     return (
-      <div className="relative w-full">
+      <div className="relative w-full" ref={containerRef}>
         <Button
           ref={ref}
           variant="outline"
