@@ -26,11 +26,12 @@ const NewProperty = () => {
       isPetsAllowed: true,
       isParkingIncluded: true,
       photoUrls: [],
-      amenities: "",
-      highlights: "",
+      amenities: [],
+      highlights: [],
       beds: 1,
       baths: 1,
-      squareFeet: 1000,
+      squaremeter: 100,
+      propertyType: PropertyTypeEnum.Apartment,
       address: "",
       city: "",
       state: "",
@@ -45,19 +46,23 @@ const NewProperty = () => {
     }
 
     const formData = new FormData();
-    Object.entries(data).forEach(([key, value]) => {
-      if (key === "photoUrls") {
-        const files = value as File[];
-        files.forEach((file: File) => {
-          formData.append("photos", file);
-        });
-      } else if (Array.isArray(value)) {
-        formData.append(key, JSON.stringify(value));
-      } else {
-        formData.append(key, String(value));
-      }
+
+    // Append all fields except files and arrays
+    const { photoUrls, amenities, highlights, ...simpleData } = data;
+    Object.entries(simpleData).forEach(([key, value]) => {
+      formData.append(key, value.toString());
     });
 
+    // Append arrays as JSON strings
+    formData.append("amenities", JSON.stringify(amenities));
+    formData.append("highlights", JSON.stringify(highlights));
+
+    // Append files with correct field name
+    photoUrls.forEach((file: File) => {
+      formData.append("photos", file);
+    });
+
+    // Append manager ID
     formData.append("managerCognitoId", authUser.cognitoInfo.userId);
 
     await createProperty(formData);
@@ -129,8 +134,8 @@ const NewProperty = () => {
                   type="number"
                 />
                 <CustomFormField
-                  name="squareFeet"
-                  label="Square Feet"
+                  name="squaremeter"
+                  label="Square Meter"
                   type="number"
                 />
               </div>
@@ -151,9 +156,9 @@ const NewProperty = () => {
                   name="propertyType"
                   label="Property Type"
                   type="select"
-                  options={Object.keys(PropertyTypeEnum).map((type) => ({
-                    value: type,
-                    label: type,
+                  options={Object.entries(PropertyTypeEnum).map(([key, value]) => ({
+                    value: key,
+                    label: value,
                   }))}
                 />
               </div>
@@ -170,19 +175,20 @@ const NewProperty = () => {
                 <CustomFormField
                   name="amenities"
                   label="Amenities"
-                  type="select"
-                  options={Object.keys(AmenityEnum).map((amenity) => ({
-                    value: amenity,
-                    label: amenity,
+                  type="multi-select"
+                  options={Object.entries(AmenityEnum).map(([value, label]) => ({
+                    value,
+                    label,
                   }))}
                 />
+
                 <CustomFormField
                   name="highlights"
                   label="Highlights"
-                  type="select"
-                  options={Object.keys(HighlightEnum).map((highlight) => ({
-                    value: highlight,
-                    label: highlight,
+                  type="multi-select"
+                  options={Object.entries(HighlightEnum).map(([value, label]) => ({
+                    value,
+                    label,
                   }))}
                 />
               </div>
@@ -198,6 +204,7 @@ const NewProperty = () => {
                 label="Property Photos"
                 type="file"
                 accept="image/*"
+                multiple
               />
             </div>
 

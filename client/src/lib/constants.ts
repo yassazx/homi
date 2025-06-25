@@ -24,7 +24,7 @@ import {
   LucideIcon,
 } from "lucide-react";
 
-export enum AmenityEnum {
+export enum AmenityEnum{
   WasherDryer = "WasherDryer",
   AirConditioning = "AirConditioning",
   Dishwasher = "Dishwasher",

@@ -88,6 +88,8 @@ const FiltersBar = () => {
           setFilters({
             location: searchInput,
             coordinates: [lng, lat],
+            searchQuery: searchInput, // ✅ Add this
+
           })
         );
       }

@@ -30,6 +30,7 @@ import "filepond/dist/filepond.min.css";
 import FilePondPluginImagePreview from "filepond-plugin-image-preview";
 import FilePondPluginImageExifOrientation from "filepond-plugin-image-exif-orientation";
 import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
+import { MultiSelect } from "@/components/ui/multi-select"
 
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
@@ -37,15 +38,16 @@ interface FormFieldProps {
   name: string;
   label: string;
   type?:
-    | "text"
-    | "email"
-    | "textarea"
-    | "number"
-    | "select"
-    | "switch"
-    | "password"
-    | "file"
-    | "multi-input";
+  | "text"
+  | "email"
+  | "textarea"
+  | "number"
+  | "select"
+  | "switch"
+  | "password"
+  | "file"
+  | "multi-input"
+  | "multi-select";
   placeholder?: string;
   options?: { value: string; label: string }[];
   accept?: string;
@@ -114,6 +116,18 @@ export const CustomFormField: React.FC<FormFieldProps> = ({
             </SelectContent>
           </Select>
         );
+
+        case "multi-select":
+          return (
+            <MultiSelect
+              options={options || []}
+              value={field.value || []}
+              onChange={field.onChange}
+              placeholder={placeholder}
+            />
+          )
+        
+
       case "switch":
         return (
           <div className="flex items-center space-x-2">
@@ -180,9 +194,8 @@ export const CustomFormField: React.FC<FormFieldProps> = ({
       defaultValue={initialValue}
       render={({ field }) => (
         <FormItem
-          className={`${
-            type !== "switch" && "rounded-md"
-          } relative ${className}`}
+          className={`${type !== "switch" && "rounded-md"
+            } relative ${className}`}
         >
           {type !== "switch" && (
             <div className="flex justify-between items-center">

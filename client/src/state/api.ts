@@ -90,8 +90,12 @@ export const api = createApi({
           propertyType: filters.propertyType,
           squareFeetMin: filters.squareFeet?.[0],
           squareFeetMax: filters.squareFeet?.[1],
-          amenities: filters.amenities?.join(","),
-          availableFrom: filters.availableFrom,
+          amenities: Array.isArray(filters.amenities)
+          ? filters.amenities.join(",")
+          : typeof filters.amenities === "string"
+            ? filters.amenities
+            : undefined,
+                  availableFrom: filters.availableFrom,
           favoriteIds: filters.favoriteIds?.join(","),
           latitude: filters.coordinates?.[1],
           longitude: filters.coordinates?.[0],
